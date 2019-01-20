@@ -1,8 +1,9 @@
 ---
 title: "Up-to-Date-tRicks"
 author: "Yaniv"
+date: "`r Sys.Date()`"
 output: 
-  html_document:
+  pdf_document:
     toc: true
     toc_depth: 3
 ---
@@ -11,7 +12,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-last compliled on `r date()`
+
 
 ***Idea***
 
@@ -48,15 +49,15 @@ This is associated with work for 1/23 and the introduction to `R` in datacamp  h
 
 ## Arithmetic 
 
-`1 + 1        # Addition ..................` yields: `r 1 + 1`  
-`2 * 2        # Multiplication ............` yields: `r 2 * 2`  
-`3 ^ 3        # Powers ....................` yields: `r 3 ^ 3`  
-`sqrt(4)      # Square roots ..............` yields: `r sqrt(4)`  
-`5 - 5        # Subtraction ...............` yields: `r 5 - 5`  
-`6 / 6        # Division ..................` yields: `r 6 / 6`  
-`factorial(7) # Factorial .................` yields: `r factorial(7)`  
-`4 %% 8       # Modulo [example 1] ........` yields: `r 4 %% 8`  
-`8 %% 4       # Modulo [example 4] ........` yields: `r 8 %% 4`  
+`1 + 1        # Addition ...................` yields: `r 1 + 1`  
+`2 * 2        # Multiplication .............` yields: `r 2 * 2`  
+`3 ^ 3        # Powers .....................` yields: `r 3 ^ 3`  
+`sqrt(4)      # Square roots ...............` yields: `r sqrt(4)`  
+`5 - 5        # Subtraction ................` yields: `r 5 - 5`  
+`6 / 6        # Division ...................` yields: `r 6 / 6`  
+`factorial(7) # Factorial ..................` yields: `r factorial(7)`  
+`4 %% 8       # Modulo [example 1] .........` yields: `r 4 %% 8`  
+`8 %% 4       # Modulo [example 4] .........` yields: `r 8 %% 4`  
 
 
 
@@ -70,14 +71,14 @@ x <- 2       # Assign "x" the value 2
 y <- 2
 ```
 
-`x * 4        # Multiply x by 4 ...........` yields: `r x * 4`  
-`ls()         # Show whats in Rs head .....` yields: `r ls()`  [in this case]
+`x * 4        # Multiply x by 4 ............` yields: `r x * 4`  
+`ls()         # Show whats in Rs head ......` yields: `r ls()`  [in this case]
 
 ```{r}
 z <- "a"
 ```
 
-`ls()         # Show whats in Rs head .....` yields: `r ls()`  [in this case]
+`ls()         # Show whats in Rs head ......` yields: `r ls()`  [in this case]
 
 
 ## Data types 
@@ -88,25 +89,25 @@ z <- "a"
 - Factor (words etc that have been stored as integers [this can be convenient or frustrating]). 
 
 Check the classes of different `R` objects:   
-`class(1) .................................` yields: `r class(1)`  
-`class(1 > 2) .............................` yields: `r class(1 > 2)`  
-`class("a") ...............................` yields: `r class("a")`  
-`class(factor("a")) .......................` yields: `r class(factor("a"))`  
+`class(1) ..................................` yields: `r class(1)`  
+`class(1 > 2) ..............................` yields: `r class(1 > 2)`  
+`class("a") ................................` yields: `r class("a")`  
+`class(factor("a")) ........................` yields: `r class(factor("a"))`  
 
 
 ## Logical operators
 
 We can ask logical questions, these can be quite useful (for example when we hope to subset our data)  
-`x * 4        # Multiply x by 4 ..........?` yields: `r x * 4`  
-`1   == 2     # Does one equal two .......?` yields: `r 1   == 2`  
-`"y" == "x"   # Does "y" equal "x" .......?` yields: `r "y" == "x"`  
-`y   == x     # Does y equal x ...........?` yields: `r y   == x`  
-`1   >  2     # Is one greater than two ..?` yields: `r 1   >  2 `  
-`1   <  2     # Is one less than two .....?` yields: `r 1   <  2`  
-`1   >= 1     # Is one > than or = to one ?` yields: `r 1   >= 1`  
-`1   <= 1     # Is one < than or = to one ?` yields: `r 1   <= 1`  
+`x * 4        # Multiply x by 4? ...........` yields: `r x * 4`  
+`1   == 2     # Does one equal two? ........` yields: `r 1   == 2`  
+`"y" == "x"   # Does "y" equal "x"? ........` yields: `r "y" == "x"`  
+`y   == x     # Does y equal x? ............` yields: `r y   == x`  
+`1   >  2     # Is one greater than two? ...` yields: `r 1   >  2 `  
+`1   <  2     # Is one less than two? ......` yields: `r 1   <  2`  
+`1   >= 1     # Is one > than or = to one? .` yields: `r 1   >= 1`  
+`1   <= 1     # Is one < than or = to one? .` yields: `r 1   <= 1`  
 `1:4 %in% 4:5 # for each value in the vector`  
-`1, 2, 3, 4, which are in the vector 4, 5 ?` yields: `r 1:4 %in% 4:5`
+`1, 2, 3, 4, which are in the vector 4, 5? .` yields: `r 1:4 %in% 4:5`
 
 
 
